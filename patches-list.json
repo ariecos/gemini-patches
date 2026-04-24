@@ -1,4 +1,27 @@
 {
-  "version": "",
-  "patches": []
+  "version": "v1.0.0",
+  "patches": [
+    {
+      "name": "GmsCore MicroG support",
+      "description": "Injects the MicroG signature-spoof permission into Gemini's AndroidManifest.",
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.google.android.apps.bard": null,
+        "com.google.android.googlequicksearchbox": null
+      },
+      "options": []
+    },
+    {
+      "name": "Route intents to patched apps",
+      "description": "Extends Gemini's package allowlist to include Morphe-patched YouTube and YouTube Music.",
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.google.android.apps.bard": null,
+        "com.google.android.googlequicksearchbox": null
+      },
+      "options": []
+    }
+  ]
 }
