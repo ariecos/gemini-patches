@@ -1,7 +1,19 @@
 {
-<<<<<<< HEAD
-  "version": "v1.0.0",
+  "version": "1.1.0",
   "patches": [
+    {
+      "name": "Example Patch",
+      "description": "Example patch to start with.",
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.example.app": [
+          "2.0.0",
+          "1.0.2"
+        ]
+      },
+      "options": []
+    },
     {
       "name": "GmsCore MicroG support",
       "description": "Injects the MicroG signature-spoof permission into Gemini's AndroidManifest.",
@@ -21,26 +33,8 @@
       "compatiblePackages": {
         "com.google.android.apps.bard": null,
         "com.google.android.googlequicksearchbox": null
-=======
-  "version": "1.0.0",
-  "patches": [
-    {
-      "name": "Example Patch",
-      "description": "Example patch to start with.",
-      "use": true,
-      "dependencies": [],
-      "compatiblePackages": {
-        "com.example.app": [
-          "2.0.0",
-          "1.0.2"
-        ]
->>>>>>> 8ccbcc5bf269187ffaae718766161e4f8e790f60
       },
       "options": []
     }
   ]
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 8ccbcc5bf269187ffaae718766161e4f8e790f60
