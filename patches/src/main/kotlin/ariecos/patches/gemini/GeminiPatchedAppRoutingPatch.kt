@@ -27,10 +27,8 @@ val geminiRoutingPatch = bytecodePatch(
         val ytm = "com.google.android.apps.youtube.music.morphe"
         val yt  = "com.google.android.youtube.morphe"
 
-        val instructions = method.implementation!!.instructions.toList()
-val lastReturnIndex = instructions.indices.last { i ->
-    instructions[i].opcode.name.let { it == "RETURN" || it == "RETURN_VOID" || it == "RETURN_OBJECT" || it == "RETURN_WIDE" }
-}
+        val lastReturnIndex = method.implementation!!.instructions
+    .indexOfLast { it.opcode.name.startsWith("RETURN") }
 
         method.addInstructionsWithLabels(
             lastReturnIndex,
