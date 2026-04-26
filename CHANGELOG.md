@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/ariecos/gemini-patches/compare/v1.1.3...v1.1.4) (2026-04-26)
+
+
+### Bug Fixes
+
+* remove template example patches ([f89b383](https://github.com/ariecos/gemini-patches/commit/f89b383c8c66d44617fc4148beff403c341a0ae7))
+
 ## [1.1.3](https://github.com/ariecos/gemini-patches/compare/v1.1.2...v1.1.3) (2026-04-26)
 
 
