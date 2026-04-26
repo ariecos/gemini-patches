@@ -1,3 +1,10 @@
+## [1.1.10](https://github.com/ariecos/gemini-patches/compare/v1.1.9...v1.1.10) (2026-04-26)
+
+
+### Bug Fixes
+
+* remove check-cast, accept Object in extension helper ([2dee8d5](https://github.com/ariecos/gemini-patches/commit/2dee8d5c001899f3f481ec1dce5d81224d15dfd3))
+
 ## [1.1.9](https://github.com/ariecos/gemini-patches/compare/v1.1.8...v1.1.9) (2026-04-26)
 
 
