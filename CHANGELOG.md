@@ -1,3 +1,10 @@
+## [1.1.7](https://github.com/ariecos/gemini-patches/compare/v1.1.6...v1.1.7) (2026-04-26)
+
+
+### Bug Fixes
+
+* use parameter registers to avoid VerifyError ([9f48524](https://github.com/ariecos/gemini-patches/commit/9f485247c55deae22b67925bbb2dfb56c19be4d1))
+
 ## [1.1.6](https://github.com/ariecos/gemini-patches/compare/v1.1.5...v1.1.6) (2026-04-26)
 
 
