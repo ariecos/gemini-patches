@@ -1,3 +1,10 @@
+## [1.1.13](https://github.com/ariecos/gemini-patches/compare/v1.1.12...v1.1.13) (2026-04-26)
+
+
+### Bug Fixes
+
+* use last instruction index directly ([4bcd288](https://github.com/ariecos/gemini-patches/commit/4bcd288d1df2fa3277bae2e5675be7f336c0d3cf))
+
 ## [1.1.12](https://github.com/ariecos/gemini-patches/compare/v1.1.11...v1.1.12) (2026-04-26)
 
 
