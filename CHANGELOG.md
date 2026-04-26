@@ -1,3 +1,11 @@
+## [1.1.12](https://github.com/ariecos/gemini-patches/compare/v1.1.11...v1.1.12) (2026-04-26)
+
+
+### Bug Fixes
+
+* inject before last return using already-typed registers v0 and v1 ([794cd59](https://github.com/ariecos/gemini-patches/commit/794cd59ab5812b22b625ebd7801a77e4ac587d35))
+* inject before last return using already-typed registers v0 and v1 ([35c2465](https://github.com/ariecos/gemini-patches/commit/35c24653fd53c6c28a3983dfd97ea89b3f52bbda))
+
 ## [1.1.11](https://github.com/ariecos/gemini-patches/compare/v1.1.10...v1.1.11) (2026-04-26)
 
 

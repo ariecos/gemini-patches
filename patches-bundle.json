@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-04-26T19:49:31",
-  "description": "## [1.1.11](https://github.com/ariecos/gemini-patches/compare/v1.1.10...v1.1.11) (2026-04-26)\n\n\n### Bug Fixes\n\n* inject after first instruction to satisfy verifier ([e6a5c35](https://github.com/ariecos/gemini-patches/commit/e6a5c355cad8b60d819c5bbaa04c38e52b16b66a))",
-  "download_url": "https://github.com/ariecos/gemini-patches/releases/download/v1.1.11/patches-1.1.11.mpp",
-  "signature_download_url": "https://github.com/ariecos/gemini-patches/releases/download/v1.1.11/patches-1.1.11.mpp.asc",
-  "version": "1.1.11"
+  "created_at": "2026-04-26T19:58:44",
+  "description": "## [1.1.12](https://github.com/ariecos/gemini-patches/compare/v1.1.11...v1.1.12) (2026-04-26)\n\n\n### Bug Fixes\n\n* inject before last return using already-typed registers v0 and v1 ([794cd59](https://github.com/ariecos/gemini-patches/commit/794cd59ab5812b22b625ebd7801a77e4ac587d35))\n* inject before last return using already-typed registers v0 and v1 ([35c2465](https://github.com/ariecos/gemini-patches/commit/35c24653fd53c6c28a3983dfd97ea89b3f52bbda))",
+  "download_url": "https://github.com/ariecos/gemini-patches/releases/download/v1.1.12/patches-1.1.12.mpp",
+  "signature_download_url": "https://github.com/ariecos/gemini-patches/releases/download/v1.1.12/patches-1.1.12.mpp.asc",
+  "version": "1.1.12"
 }
