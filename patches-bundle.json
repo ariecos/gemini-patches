@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-04-26T18:47:09",
-  "description": "## [1.1.5](https://github.com/ariecos/gemini-patches/compare/v1.1.4...v1.1.5) (2026-04-26)\n\n\n### Bug Fixes\n\n* use addInstructions instead of addInstructionsWithLabels ([23e87a5](https://github.com/ariecos/gemini-patches/commit/23e87a5b3d28fca8496e92712b1aecc4fefd7ebf))",
-  "download_url": "https://github.com/ariecos/gemini-patches/releases/download/v1.1.5/patches-1.1.5.mpp",
-  "signature_download_url": "https://github.com/ariecos/gemini-patches/releases/download/v1.1.5/patches-1.1.5.mpp.asc",
-  "version": "1.1.5"
+  "created_at": "2026-04-26T19:00:46",
+  "description": "## [1.1.6](https://github.com/ariecos/gemini-patches/compare/v1.1.5...v1.1.6) (2026-04-26)\n\n\n### Bug Fixes\n\n* correct Morphe default package name scheme ([917bbba](https://github.com/ariecos/gemini-patches/commit/917bbba21603d15a8d033edc2ad20bb0aad705de))",
+  "download_url": "https://github.com/ariecos/gemini-patches/releases/download/v1.1.6/patches-1.1.6.mpp",
+  "signature_download_url": "https://github.com/ariecos/gemini-patches/releases/download/v1.1.6/patches-1.1.6.mpp.asc",
+  "version": "1.1.6"
 }

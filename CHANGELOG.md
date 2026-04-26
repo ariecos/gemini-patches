@@ -1,3 +1,10 @@
+## [1.1.6](https://github.com/ariecos/gemini-patches/compare/v1.1.5...v1.1.6) (2026-04-26)
+
+
+### Bug Fixes
+
+* correct Morphe default package name scheme ([917bbba](https://github.com/ariecos/gemini-patches/commit/917bbba21603d15a8d033edc2ad20bb0aad705de))
+
 ## [1.1.5](https://github.com/ariecos/gemini-patches/compare/v1.1.4...v1.1.5) (2026-04-26)
 
 
