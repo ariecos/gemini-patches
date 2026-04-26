@@ -1,13 +1,12 @@
-group = "app.template"
-
+group = "ariecos.patches"
 patches {
     about {
-        name = "UserXYZ Patches"
-        description = "Patches for apps I like"
-        source = "git@github.com:UserXYZ/morphe-patches.git"
-        author = "Awesome dev"
+        name = "Ariecos Patches"
+        description = "Patches to make Gemini work with Morphe-patched apps"
+        source = "https://github.com/ariecos/gemini-patches"
+        author = "ariecos"
         contact = "na"
-        website = "na"
+        website = "https://github.com/ariecos/gemini-patches"
         license = "GPLv3"
     }
 }
