@@ -27,13 +27,8 @@ val geminiRoutingPatch = bytecodePatch(
         val ytm = "com.google.android.apps.youtube.music.morphe"
         val yt  = "com.google.android.youtube.morphe"
 
-        val instructions = method.implementation!!.instructions.toList()
-val lastReturnIndex = instructions.indices.last { i ->
-    instructions[i].opcode.name.startsWith("RETURN", ignoreCase = true)
-}
-
         method.addInstructionsWithLabels(
-            lastReturnIndex,
+            0,
             """
                 iget-object v0, p0, $cweClass->a:Ljava/lang/Object;
                 const-string v1, "$ytm"
@@ -43,12 +38,11 @@ val lastReturnIndex = instructions.indices.last { i ->
                 const-string v1, "$yt"
                 invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
                 move-result v1
-                if-nez v1, :patched_match
-                goto :original_false
+                if-eqz v1, :not_matched
                 :patched_match
                 const/4 v1, 0x1
                 return v1
-                :original_false
+                :not_matched
             """.trimIndent()
         )
     }
