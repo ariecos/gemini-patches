@@ -1,3 +1,10 @@
+## [1.1.11](https://github.com/ariecos/gemini-patches/compare/v1.1.10...v1.1.11) (2026-04-26)
+
+
+### Bug Fixes
+
+* inject after first instruction to satisfy verifier ([e6a5c35](https://github.com/ariecos/gemini-patches/commit/e6a5c355cad8b60d819c5bbaa04c38e52b16b66a))
+
 ## [1.1.10](https://github.com/ariecos/gemini-patches/compare/v1.1.9...v1.1.10) (2026-04-26)
 
 

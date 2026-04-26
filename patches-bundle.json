@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-04-26T19:44:45",
-  "description": "## [1.1.10](https://github.com/ariecos/gemini-patches/compare/v1.1.9...v1.1.10) (2026-04-26)\n\n\n### Bug Fixes\n\n* remove check-cast, accept Object in extension helper ([2dee8d5](https://github.com/ariecos/gemini-patches/commit/2dee8d5c001899f3f481ec1dce5d81224d15dfd3))",
-  "download_url": "https://github.com/ariecos/gemini-patches/releases/download/v1.1.10/patches-1.1.10.mpp",
-  "signature_download_url": "https://github.com/ariecos/gemini-patches/releases/download/v1.1.10/patches-1.1.10.mpp.asc",
-  "version": "1.1.10"
+  "created_at": "2026-04-26T19:49:31",
+  "description": "## [1.1.11](https://github.com/ariecos/gemini-patches/compare/v1.1.10...v1.1.11) (2026-04-26)\n\n\n### Bug Fixes\n\n* inject after first instruction to satisfy verifier ([e6a5c35](https://github.com/ariecos/gemini-patches/commit/e6a5c355cad8b60d819c5bbaa04c38e52b16b66a))",
+  "download_url": "https://github.com/ariecos/gemini-patches/releases/download/v1.1.11/patches-1.1.11.mpp",
+  "signature_download_url": "https://github.com/ariecos/gemini-patches/releases/download/v1.1.11/patches-1.1.11.mpp.asc",
+  "version": "1.1.11"
 }
