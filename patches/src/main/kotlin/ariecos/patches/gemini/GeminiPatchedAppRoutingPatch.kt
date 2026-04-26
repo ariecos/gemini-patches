@@ -4,6 +4,8 @@ import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patcher.fingerprint
 
+private const val EXTENSION_CLASS = "Lariecos/patches/gemini/extension/AllowlistHelper;"
+
 val allowlistFingerprint = fingerprint {
     returns("Z")
     parameters()
@@ -21,42 +23,25 @@ val geminiRoutingPatch = bytecodePatch(
         "com.google.android.googlequicksearchbox",
     )
 
-   execute {
+    extendWith("extensions/extension.mpe")
+
+    execute {
         val method = allowlistFingerprint.method
         val cweClass = method.definingClass
-        val ytm = "app.morphe.android.apps.youtube.music"
-        val yt  = "app.morphe.android.youtube"
 
-        val impl = method.implementation!!
-        val oldRegCount = impl.registerCount
-        val newRegCount = oldRegCount + 2
-        val r0 = oldRegCount      // new register for this.a
-        val r1 = oldRegCount + 1  // new register for string comparisons
-
-        // Rebuild implementation with increased register count
-        val newImpl = com.android.tools.smali.dexlib2.builder.MutableMethodImplementation(newRegCount)
-        impl.instructions.forEach { newImpl.addInstruction(it) }
-        impl.tryBlocks.forEach { newImpl.addCatchAllHandler(it, "") }
-        method.implementation = newImpl
-
+        // Prepend a call to our helper which checks the patched package names.
+        // The helper receives this.a (the package name string) and returns
+        // true if it matches a patched package — if so we return true immediately.
         method.addInstructions(
             0,
             """
-                iget-object v$r0, p0, $cweClass->a:Ljava/lang/Object;
-                const-string v$r1, "$ytm"
-                invoke-virtual {v$r0, v$r1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
-                move-result v$r1
-                if-eqz v$r1, :check_yt
-                const/4 v$r0, 0x1
-                return v$r0
-                :check_yt
-                const-string v$r1, "$yt"
-                invoke-virtual {v$r0, v$r1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
-                move-result v$r1
-                if-eqz v$r1, :no_match
-                const/4 v$r0, 0x1
-                return v$r0
-                :no_match
+                iget-object v0, p0, $cweClass->a:Ljava/lang/Object;
+                check-cast v0, Ljava/lang/String;
+                invoke-static {v0}, $EXTENSION_CLASS->isPatchedPackage(Ljava/lang/String;)Z
+                move-result v0
+                if-eqz v0, :not_patched
+                return v0
+                :not_patched
             """.trimIndent()
         )
     }
