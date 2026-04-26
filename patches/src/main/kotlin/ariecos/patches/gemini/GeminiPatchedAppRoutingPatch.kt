@@ -24,8 +24,8 @@ val geminiRoutingPatch = bytecodePatch(
    execute {
         val method = allowlistFingerprint.method
         val cweClass = method.definingClass
-        val ytm = "com.google.android.apps.youtube.music.morphe"
-        val yt  = "com.google.android.youtube.morphe"
+	val ytm = "app.morphe.android.apps.youtube.music"
+	val yt  = "app.morphe.android.youtube"
 
         method.addInstructions(
             0,
