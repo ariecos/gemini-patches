@@ -1,3 +1,10 @@
+## [1.1.14](https://github.com/ariecos/gemini-patches/compare/v1.1.13...v1.1.14) (2026-04-26)
+
+
+### Bug Fixes
+
+* inject at cond_0 where v1 is verified Object reference ([7d311f1](https://github.com/ariecos/gemini-patches/commit/7d311f1d1193480d2828a607af602dfb0870e10e))
+
 ## [1.1.13](https://github.com/ariecos/gemini-patches/compare/v1.1.12...v1.1.13) (2026-04-26)
 
 
