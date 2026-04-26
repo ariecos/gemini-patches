@@ -21,16 +21,23 @@ val geminiRoutingPatch = bytecodePatch(
         "com.google.android.googlequicksearchbox",
     )
 
-   execute {
+   eexecute {
         val method = allowlistFingerprint.method
         val cweClass = method.definingClass
         val ytm = "app.morphe.android.apps.youtube.music"
         val yt  = "app.morphe.android.youtube"
 
-        // Use the last two existing registers safely
-        val regCount = method.implementation!!.registerCount
-        val r0 = regCount - 2
-        val r1 = regCount - 1
+        val impl = method.implementation!!
+        val oldRegCount = impl.registerCount
+        val newRegCount = oldRegCount + 2
+        val r0 = oldRegCount      // new register for this.a
+        val r1 = oldRegCount + 1  // new register for string comparisons
+
+        // Rebuild implementation with increased register count
+        val newImpl = com.android.tools.smali.dexlib2.builder.MutableMethodImplementation(newRegCount)
+        impl.instructions.forEach { newImpl.addInstruction(it) }
+        impl.tryBlocks.forEach { newImpl.addCatchAllHandler(it, "") }
+        method.implementation = newImpl
 
         method.addInstructions(
             0,
