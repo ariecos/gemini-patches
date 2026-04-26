@@ -36,8 +36,7 @@ val geminiRoutingPatch = bytecodePatch(
             0,
             """
                 iget-object v0, p0, $cweClass->a:Ljava/lang/Object;
-                check-cast v0, Ljava/lang/String;
-                invoke-static {v0}, $EXTENSION_CLASS->isPatchedPackage(Ljava/lang/String;)Z
+                invoke-static {v0}, $EXTENSION_CLASS->isPatchedPackage(Ljava/lang/Object;)Z
                 move-result v0
                 if-eqz v0, :not_patched
                 return v0
