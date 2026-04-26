@@ -27,13 +27,10 @@ val geminiRoutingPatch = bytecodePatch(
         val ytm = "app.morphe.android.apps.youtube.music"
         val yt  = "app.morphe.android.youtube"
 
-        // Increase register count to make room for our new registers
-        val implementation = method.implementation!!
-        val newRegisterCount = implementation.registerCount + 2
-        method.implementation = implementation.withRegisterCount(newRegisterCount)
-
-        val r0 = newRegisterCount - 2
-        val r1 = newRegisterCount - 1
+        // Use the last two existing registers safely
+        val regCount = method.implementation!!.registerCount
+        val r0 = regCount - 2
+        val r1 = regCount - 1
 
         method.addInstructions(
             0,
