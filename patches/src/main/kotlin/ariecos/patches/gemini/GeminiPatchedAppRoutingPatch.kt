@@ -33,7 +33,7 @@ val geminiRoutingPatch = bytecodePatch(
         // The helper receives this.a (the package name string) and returns
         // true if it matches a patched package — if so we return true immediately.
         method.addInstructions(
-            0,
+            1,
             """
                 iget-object v0, p0, $cweClass->a:Ljava/lang/Object;
                 invoke-static {v0}, $EXTENSION_CLASS->isPatchedPackage(Ljava/lang/Object;)Z
