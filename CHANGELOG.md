@@ -1,3 +1,11 @@
+## [1.1.8](https://github.com/ariecos/gemini-patches/compare/v1.1.7...v1.1.8) (2026-04-26)
+
+
+### Bug Fixes
+
+* increase register count before injection ([73b08ed](https://github.com/ariecos/gemini-patches/commit/73b08edc55e964d59f991ea7ed5f1d561abc2cb5))
+* use existing registers instead of adding new ones ([a17d8d8](https://github.com/ariecos/gemini-patches/commit/a17d8d824991c13efa17bf15cf95682394d28b21))
+
 ## [1.1.7](https://github.com/ariecos/gemini-patches/compare/v1.1.6...v1.1.7) (2026-04-26)
 
 
