@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/ariecos/gemini-patches/compare/v1.1.2...v1.1.3) (2026-04-26)
+
+
+### Bug Fixes
+
+* inject at method start instead of before return ([f093106](https://github.com/ariecos/gemini-patches/commit/f09310665f7bffdcfa85431d35bf515949af39ae))
+
 ## [1.1.2](https://github.com/ariecos/gemini-patches/compare/v1.1.1...v1.1.2) (2026-04-26)
 
 
