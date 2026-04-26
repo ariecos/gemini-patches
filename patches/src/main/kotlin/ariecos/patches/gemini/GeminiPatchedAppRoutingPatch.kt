@@ -21,7 +21,7 @@ val geminiRoutingPatch = bytecodePatch(
         "com.google.android.googlequicksearchbox",
     )
 
-   eexecute {
+   execute {
         val method = allowlistFingerprint.method
         val cweClass = method.definingClass
         val ytm = "app.morphe.android.apps.youtube.music"
