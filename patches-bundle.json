@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-04-26T19:28:35",
-  "description": "## [1.1.8](https://github.com/ariecos/gemini-patches/compare/v1.1.7...v1.1.8) (2026-04-26)\n\n\n### Bug Fixes\n\n* increase register count before injection ([73b08ed](https://github.com/ariecos/gemini-patches/commit/73b08edc55e964d59f991ea7ed5f1d561abc2cb5))\n* use existing registers instead of adding new ones ([a17d8d8](https://github.com/ariecos/gemini-patches/commit/a17d8d824991c13efa17bf15cf95682394d28b21))",
-  "download_url": "https://github.com/ariecos/gemini-patches/releases/download/v1.1.8/patches-1.1.8.mpp",
-  "signature_download_url": "https://github.com/ariecos/gemini-patches/releases/download/v1.1.8/patches-1.1.8.mpp.asc",
-  "version": "1.1.8"
+  "created_at": "2026-04-26T19:37:58",
+  "description": "## [1.1.9](https://github.com/ariecos/gemini-patches/compare/v1.1.8...v1.1.9) (2026-04-26)\n\n\n### Bug Fixes\n\n* properly increase register count via MutableMethodImplementation ([3764bec](https://github.com/ariecos/gemini-patches/commit/3764bec36445e9b554960edf87331bec798bec7c))\n* properly increase register count via MutableMethodImplementation ([ff04f96](https://github.com/ariecos/gemini-patches/commit/ff04f96d0ec7c06b214f79ec66e3b0bb4ddf5461))\n* use extension helper to avoid register conflicts ([0f7abf3](https://github.com/ariecos/gemini-patches/commit/0f7abf3008cd9e7f929561a89307c8bac7995e8b))",
+  "download_url": "https://github.com/ariecos/gemini-patches/releases/download/v1.1.9/patches-1.1.9.mpp",
+  "signature_download_url": "https://github.com/ariecos/gemini-patches/releases/download/v1.1.9/patches-1.1.9.mpp.asc",
+  "version": "1.1.9"
 }

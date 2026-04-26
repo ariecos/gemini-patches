@@ -1,3 +1,12 @@
+## [1.1.9](https://github.com/ariecos/gemini-patches/compare/v1.1.8...v1.1.9) (2026-04-26)
+
+
+### Bug Fixes
+
+* properly increase register count via MutableMethodImplementation ([3764bec](https://github.com/ariecos/gemini-patches/commit/3764bec36445e9b554960edf87331bec798bec7c))
+* properly increase register count via MutableMethodImplementation ([ff04f96](https://github.com/ariecos/gemini-patches/commit/ff04f96d0ec7c06b214f79ec66e3b0bb4ddf5461))
+* use extension helper to avoid register conflicts ([0f7abf3](https://github.com/ariecos/gemini-patches/commit/0f7abf3008cd9e7f929561a89307c8bac7995e8b))
+
 ## [1.1.8](https://github.com/ariecos/gemini-patches/compare/v1.1.7...v1.1.8) (2026-04-26)
 
 
