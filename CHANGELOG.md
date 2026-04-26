@@ -1,3 +1,15 @@
+## [1.1.1](https://github.com/ariecos/gemini-patches/compare/v1.1.0...v1.1.1) (2026-04-26)
+
+
+### Bug Fixes
+
+* correct return opcode detection ([4fa70a6](https://github.com/ariecos/gemini-patches/commit/4fa70a64b3b416fa16e0a9e25cad36dbbe69229e))
+* correct return opcode detection ([271e549](https://github.com/ariecos/gemini-patches/commit/271e549ff2bbc2291df51fa0646919777e14f9af))
+* correct return opcode detection ([a6079ab](https://github.com/ariecos/gemini-patches/commit/a6079aba805d75d3d3c68b73b5b80b69c43720a5))
+* correct return opcode detection ([0416a16](https://github.com/ariecos/gemini-patches/commit/0416a160bba3a96ce9555c3a8d9995e3f01d8cf2))
+* correct return opcode detection ([b3c3a70](https://github.com/ariecos/gemini-patches/commit/b3c3a704b81fd2108b2a9b57efc3ae20410c92da))
+* restore correct patch files after merge conflict ([02bd161](https://github.com/ariecos/gemini-patches/commit/02bd16129fdfa1d627b8ed8ad04fc22aab81a5ac))
+
 # [1.1.0](https://github.com/ariecos/gemini-patches/compare/v1.0.0...v1.1.0) (2026-04-24)
 
 
