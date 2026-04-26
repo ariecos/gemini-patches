@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/ariecos/gemini-patches/compare/v1.1.4...v1.1.5) (2026-04-26)
+
+
+### Bug Fixes
+
+* use addInstructions instead of addInstructionsWithLabels ([23e87a5](https://github.com/ariecos/gemini-patches/commit/23e87a5b3d28fca8496e92712b1aecc4fefd7ebf))
+
 ## [1.1.4](https://github.com/ariecos/gemini-patches/compare/v1.1.3...v1.1.4) (2026-04-26)
 
 
