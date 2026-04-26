@@ -30,20 +30,20 @@ val geminiRoutingPatch = bytecodePatch(
         method.addInstructions(
             0,
             """
-                iget-object v0, p0, $cweClass->a:Ljava/lang/Object;
-                const-string v1, "$ytm"
-                invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
-                move-result v1
-                if-eqz v1, :check_yt
-                const/4 v0, 0x1
-                return v0
+                iget-object p1, p0, $cweClass->a:Ljava/lang/Object;
+                const-string p2, "$ytm"
+                invoke-virtual {p1, p2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+                move-result p2
+                if-eqz p2, :check_yt
+                const/4 p1, 0x1
+                return p1
                 :check_yt
-                const-string v1, "$yt"
-                invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
-                move-result v1
-                if-eqz v1, :no_match
-                const/4 v0, 0x1
-                return v0
+                const-string p2, "$yt"
+                invoke-virtual {p1, p2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+                move-result p2
+                if-eqz p2, :no_match
+                const/4 p1, 0x1
+                return p1
                 :no_match
             """.trimIndent()
         )
