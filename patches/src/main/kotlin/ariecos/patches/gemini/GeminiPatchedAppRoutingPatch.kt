@@ -27,17 +27,10 @@ val geminiRoutingPatch = bytecodePatch(
         val yt  = "app.morphe.android.youtube"
 
         val instructions = method.implementation!!.instructions.toList()
-
-        var lastReturnIdx = -1
-        for (i in instructions.indices.reversed()) {
-            if (instructions[i].opcode.name == "RETURN") {
-                lastReturnIdx = i
-                break
-            }
-        }
+        val lastIdx = instructions.size - 1
 
         method.addInstructions(
-            lastReturnIdx,
+            lastIdx,
             """
                 const-string v0, "$ytm"
                 invoke-virtual {v1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
