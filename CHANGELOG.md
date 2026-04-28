@@ -1,3 +1,12 @@
+## [1.1.15](https://github.com/ariecos/gemini-patches/compare/v1.1.14...v1.1.15) (2026-04-28)
+
+
+### Bug Fixes
+
+* replace unused ambient music strings with patched package names ([793dee0](https://github.com/ariecos/gemini-patches/commit/793dee027305551eef8588fea2ac0c48982d4eab))
+* use method.implementationgit add ..instructions ([f7ac4f7](https://github.com/ariecos/gemini-patches/commit/f7ac4f7e82102eb334064b965792f5adc83acc8a))
+* use replaceInstruction to swap ambient music strings ([a254bff](https://github.com/ariecos/gemini-patches/commit/a254bff9e680f5875f2aef652d3097df2ce408ad))
+
 ## [1.1.14](https://github.com/ariecos/gemini-patches/compare/v1.1.13...v1.1.14) (2026-04-26)
 
 
