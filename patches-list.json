@@ -1,5 +1,5 @@
 {
-  "version": "1.1.14",
+  "version": "v1.1.3",
   "patches": [
     {
       "name": "GmsCore MicroG support",
@@ -14,7 +14,7 @@
     },
     {
       "name": "Route intents to patched apps",
-      "description": "Extends Gemini's package allowlist to include Morphe-patched YouTube and YouTube Music.",
+      "description": "Replaces unused internal package names in Gemini's allowlist with Morphe-patched YouTube and YouTube Music package names.",
       "use": true,
       "dependencies": [],
       "compatiblePackages": {

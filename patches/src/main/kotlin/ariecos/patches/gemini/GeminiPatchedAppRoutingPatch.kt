@@ -33,7 +33,7 @@ val geminiRoutingPatch = bytecodePatch(
                 "app.morphe.android.youtube",
         )
 
-        method.instructions.forEachIndexed { index, instruction ->
+        method.implementation!!.instructions.toList().forEachIndexed { index, instruction ->
             val ref = (instruction as? ReferenceInstruction)?.reference?.toString()
                 ?: return@forEachIndexed
             val replacement = replacements[ref] ?: return@forEachIndexed
