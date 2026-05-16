@@ -1,3 +1,10 @@
+## [1.1.16](https://github.com/ariecos/gemini-patches/compare/v1.1.15...v1.1.16) (2026-05-16)
+
+
+### Bug Fixes
+
+* inject MicroG-RE spoof metadata with correct Gemini cert ([c85d2cd](https://github.com/ariecos/gemini-patches/commit/c85d2cdc59b8e879148a9016c273aefa41dc11fb))
+
 ## [1.1.15](https://github.com/ariecos/gemini-patches/compare/v1.1.14...v1.1.15) (2026-04-28)
 
 
